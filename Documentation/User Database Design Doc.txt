@@ -1,0 +1,84 @@
+User Database Design Document
+Eureka Eats, CS 3337 Group 6
+Last Updated: 10/14/2023
+
+NOTE:
+Updated version of a mock user database design from product proposal. This design is a representation of what the user database should be for our website EurekaEats. Design will be updated to meet new changes.
+
+MongoDB items in database:
+Field id - unique id assigned to every user account. Type int
+Field username -  Username of the user. Type String
+Field first_name - First name of the user. Type String
+Field last_name - Last name of the user. Type String
+Field location - General coordinate of the user. Type [double,double]  
+Field eating_preferences - eating preferences of the user. Type Object
+	Field vegan - is the user vegan. Type Boolean
+	Field keto - do the user prefer keto. Type Boolean
+	Field gluten_free : do the user prefer gluten free. Type Boolean
+Field protein - what type of protein they prefer. Type Object
+	Field beef - User prefers beef. Type Boolean
+	Field chicken - User prefers chicken. Type Boolean
+	Field pork - User prefers pork. Type Boolean
+	Field tofu - User prefers tofu/soy. Type Boolean
+	Field lamb - User prefers lamb. Type Boolean
+ Field cuisine - what type of cuisine they prefer. Type Object
+	Field Italian - User prefers Italian food. Type Boolean
+	Field Chinese - User prefers Chinese food. Type Boolean
+	Field Japanese - User prefers Italian food. Type Boolean
+	Field Taiwanese - User prefers Chinese food. Type Boolean
+	Field Indian - User prefers Italian food. Type Boolean
+	Field Thai - User prefers Chinese food. Type Boolean
+	Field French - User prefers Italian food. Type Boolean
+	Field American - User prefers Chinese food. Type Boolean
+	Field Mexican - User prefers Mexican food. Type Boolean
+Field reviews - Reviews for the restaurant. Type Object
+	Field restaurant_id - restaurant id for access to the restaurant database. Type int
+	Field restaurant_name - the restaurant name. Type String
+	Field datetime - Time of the review. Type Date Object
+	Field star_rating - Star rating review of the restaurant. Type int
+	Field comment - User comments for the restaurant. Type String  
+
+{
+	user_id: 1,
+	username: "fakeperson123",
+	first_name: "Fake",
+	last_name : "Person",
+	location: [122.222, 133.333],
+	eating_preferences: [
+			vegan: FALSE,
+			keto: FALSE,
+			gluten_free: FALSE,
+			protein: [
+				beef: TRUE,
+				chicken: TRUE,
+				pork: TRUE,
+				tofu: TRUE,
+				lamb: TRUE
+			]
+			cuisine: [
+				Italian: FALSE,
+				Chinese: TRUE,
+				Japanese: TRUE,
+				Taiwanese: TRUE,
+				Indian: TRUE,
+				Thai: TRUE,
+				French: FALSE,
+				American: TRUE,
+				Mexican: TRUE
+			]
+	]
+	reviews: [
+	{
+		restaurant_id: 1234,
+		restaurant_name: "Mc'Donald"
+		date_time: 10/13/2023, 9:43AM
+		star_rating: 3
+		comment: "The food suck!"		
+	}
+	]
+	
+}
+
+Change log
+10/13/23 - Devin - Created initial document.
+10/14/23 - David - Updated formatting. Updated reviews to contain a date-time field. Added more cuisines.

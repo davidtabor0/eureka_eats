@@ -1,0 +1,227 @@
+/*
+  Contents of CSS:
+*/
+
+@media(min-width: 800px) {
+  header.landing-page-header {
+    background-color: #98DCE8;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px;
+    align-items: center;
+    margin-top: 100;
+  }
+
+  .landing-page-logo img {
+    width: 25vw;
+  }
+  
+  .landing-page-search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .landing-page-search-button {
+    background-color: #135E8A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 17px 20px;
+    cursor: pointer;
+    margin-left: 350px; /* not sure if other dev computers move this to far to the left,but is centered on my mac */
+  }
+  
+  .landing-page-header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .landing-page-login-button {
+    background-color: #F9BB96;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  
+  .landing-page-header-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFF;
+  }
+  
+  .landing-page-signup-button {
+    background-color: #E76062;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+}
+
+@media(max-width: 799px) {
+  header.landing-page-header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #98DCE8;
+    color: white;
+    box-shadow: 0px 10px 8px #e1e1e1;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .landing-page-logo img {
+    width: 20vw;
+  }
+  
+  .landing-page-search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .landing-page-search-button {
+    background-color: #135E8A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .landing-page-header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .landing-page-login-button {
+    background-color: #F9BB96;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .landing-page-header-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFF;
+  }
+  
+  .landing-page-signup-button {
+    background-color: #E76062;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+main.landing-page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; 
+}
+
+.landing-page-logo img {
+  width: 20vw;
+  margin-left: -10px;
+}
+
+.landing-page-search-bar {
+  display: block;
+}
+
+/* Basic Text */
+
+h1.landing-page-h1 {
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Avenir';
+  color: #E76062;
+}
+
+h2.landing-page-h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Avenir';
+  color: #135E8A;
+  text-align: center;
+  align-items: center;
+}
+
+p.landing-page-p {
+  margin-top: 30px; /* Adjust as needed for spacing */
+  font-size: 18px;
+  font-family: 'Avenir';
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Review Tiles */
+
+.landing-page-blue-rectangle {
+  background-color: #E5F7FB;
+  height: 230px;
+  width: 78.2vw;
+  border-radius: 0px 0px 25px 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.landing-page-blue-rectangle1 {
+  background-color: #E5F7FB;
+  height: 230px;
+  width: 78.2vw;
+  border-radius: 0px 0px 25px 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.landing-page-content-container {
+  flex: 1;
+}
+
+h3.landing-page-h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'Avenir';
+  font-weight: 500;
+}
+
+.tile-header-link {
+  color: white;
+  /* Add any other styling you want for the link */
+  text-decoration: underline; /* If you want to keep the underline */
+}
+
+.price-limit{
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+}

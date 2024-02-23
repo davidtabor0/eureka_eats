@@ -1,0 +1,216 @@
+/* Base Elements */
+
+header.profile-page-header {
+    background-color: #98DCE8;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto 3fr 2fr;
+    grid-template-rows: 100px;
+    align-items: center;
+    margin-top: 100;
+    box-shadow: 0px 10px 8px #e1e1e1;
+}
+
+nav.profile-page-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+a.profile-page-nav-link-tile {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    text-decoration: none;
+    color: #135E8A;
+}
+
+a.profile-page-nav-link-tile:hover {
+    border-bottom: 2px solid #a52d57;
+    color: #3c7a9e;
+}
+
+/* Responsive Layout Rules */
+
+@media (max-width: 599px) {
+    main.profile-page-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        
+    }
+
+    section.profile-page-profile-section {
+        margin: 0;
+        padding: 5px;
+        display: block;
+        
+    }
+
+    .profile-page-control-box {
+        margin: 5px;
+        padding: 5px;
+        background-color: #E76062;
+        color: antiquewhite;
+        box-shadow: 10px 10px 8px whitesmoke;
+    }
+}
+
+@media (min-width: 600px) {
+    main.profile-page-main {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0;
+        padding: 20px 2.5%;
+        gap: 10px;
+
+    }
+
+    section.profile-page-profile-section {
+        margin: 0;
+        padding: 10px;
+        
+     
+    }
+
+    .profile-page-control-box {
+        margin: 10px;
+        padding: 10px;
+        background-color: hsl(359, 74%, 64%);
+        color: antiquewhite;
+        
+       
+    }
+}
+
+/* Specific Content: Text */
+
+h2.profile-page-h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: #135E8A;
+}
+h2.profile-page-h2-bottom {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: #E76062;
+    
+}
+
+h3.profile-page-h3 {
+    padding: 10px 0;
+    text-align: center;
+    color: #000000;
+    margin: 230px 0;
+    margin-left: 700px;
+    
+}
+
+p.profile-page-p {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Specific Content: Controls for later profile forms */
+
+form.profile-page-logout-form {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    margin-left: 670px; /* Could be different for different screen sizes, works on my mac - IQRA*/
+    
+    
+}
+
+.profile-page-logout-form-section {
+    margin: 0;
+    padding: 5px;
+}
+
+label.profile-page-logout-form-label {
+    margin: 0;
+    padding: 6px;
+    color: #135E8A;
+    font-weight: 500;
+}
+
+label.profile-page-logout-form-label:hover, label.profile-page-logout-form-label:focus {
+    color: #E76062;
+}
+
+.profile-page-logout-form-input {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: auto;
+    font-size: 15px;
+    
+}
+
+.profile-page-logout-form-button {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E76062;
+    color: white;
+    font-size: 15px;
+    font-family: 'Avenir';
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.profile-page-logout-form-button:hover, .profile-page-logout-form-button:focus {
+    background-color: #E76062;
+    color: antiquewhite;
+}
+.profile-header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-left: 100px;
+
+}
+
+.profile-header-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFF;
+}
+
+.profile-logo img{
+    width: 20vw;
+    margin-left: -10px;
+    
+}
+.profile-info-content{
+    align-items: center;
+    margin-left: 300px;
+    
+
+    
+
+}
+.profile-signup-button{
+    background-color: #E76062;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 30px;
+    cursor: pointer;
+}

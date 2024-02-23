@@ -1,0 +1,82 @@
+h2.signin-page-h2 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+p.signin-page-p {
+  margin: 10px 0;
+}
+
+.signin-page-logo-link {
+  text-align: center;
+}
+
+.signin-page-ee-logo {
+  width: 250px;
+  height: auto;
+}
+
+main.signin-page-main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+
+.signin-page-content-box {
+  
+  display: block;
+  width: 50vw;
+  
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #fdd;
+  background-color: #E5F7FB;
+  box-shadow: 10px 10px 5px whitesmoke;
+  text-align: center;
+
+
+}
+
+.signin-page-content-box:hover {
+  border: 1px solid #135E8A;
+}
+
+.signin-page-form-field-bar {
+
+  margin: 10px 0;
+}
+
+.signin-page-form-field-bar>input[type="text"],
+.signin-page-form-field-bar>input[type="password"] {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+  /* Set the input fields to white */
+}
+
+input[type="submit"].signin-page-form-login-button {
+  width: auto;
+  background-color: #135E8A;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"].signin-page-login-button:hover {
+  background-color: #2a80b9;
+  /* Slightly darker color on hover */
+}
+
+.signin-page-form-login-button {
+  margin-top: 40px
+}

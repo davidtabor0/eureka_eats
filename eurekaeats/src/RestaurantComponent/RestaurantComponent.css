@@ -1,0 +1,243 @@
+/*
+  RestaurantComponent.css
+*/
+
+header.restaurant-page-header {
+  background-color: #98DCE8;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto 3fr 2fr;
+  grid-template-rows: 100px;
+  align-items: center;
+}
+
+.restaurant-page-logo img {
+  width: 30vw;
+  margin-left: -100px;
+}
+
+/* Controls */
+
+.restaurant-page-header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.restaurant-page-button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #F9BB96;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.restaurant-page-button:hover {
+  background-color: #E76062;
+}
+
+/* Basic Text */
+
+h2.restaurant-page-h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+  text-align: center;
+  color: #E76062;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Avenir';
+}
+
+h3.restaurant-page-h3 {
+  display: inline-block;
+  /* align-items: center; */
+  text-align: center;
+  color: #E76062;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Avenir';
+}
+
+p.restaurant-page-txt {
+  margin: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Avenir';
+  font-weight: 500;
+}
+
+a.restaurant-page-extern-link {
+  display: inline;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: #E76062;
+}
+
+a.restaurant-page-extern-link:hover {
+  text-decoration: underline;
+  color: #f27c7e;
+}
+
+/* Main Content */
+@media(min-width: 800px) {
+  main.restaurant-page-wrapper {
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 45vw;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  section.restaurant-page-board {
+    display: block;
+    border: 2px solid #135E8A;
+    background-color: #E5F7FB;
+  }
+  
+  .restaurant-page-board-top {
+    display: grid;
+    grid-template-columns: 25vw 15vw;
+    gap: 5px;
+    margin: 0;
+  }
+  
+  .restaurant-page-board-top-left, .restaurant-page-board-top-right {
+    display: block;
+    padding: 15px;
+    /* todo */
+  }
+  
+  .restaurant-page-board-main {
+    display: block;
+    padding: 15px;
+  }
+  
+  .restaurant-page-board-top-right img {
+    display: inline;
+    border: 2px solid #135E8A;
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 10px;
+  }
+}
+
+@media(max-width: 799px) {
+  main.restaurant-page-wrapper {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  section.restaurant-page-board {
+    display: block;
+    border: 2px solid #135E8A;
+    background-color: #E5F7FB;
+  }
+  
+  .restaurant-page-board-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    margin: 0;
+  }
+  
+  .restaurant-page-board-top-left, .restaurant-page-board-top-right {
+    display: block;
+    padding: 7.5px;
+    /* todo */
+  }
+  
+  .restaurant-page-board-main {
+    display: block;
+    padding: 7.5px;
+  }
+  
+  .restaurant-page-board-top-right img {
+    display: inline;
+    border: 2px solid #135E8A;
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 10px;
+  }
+}
+
+/* Board Content */
+
+ul.restaurant-page-board-briefs {
+  list-style: none;
+  padding: 0 0 0 5px;
+}
+
+ul.restaurant-page-board-stats {
+  display: flex;
+  list-style: none;
+  padding: 0 0 0 5px;
+}
+
+li.restaurant-page-board-stat {
+  display: block;
+  margin: 0 5px 0 0;
+  padding: 5px;
+  border: 2px solid whitesmoke;
+  background-color: white;
+  color: #E76062;
+  transition-property: padding;
+  transition-duration: 0.5s;
+}
+
+li.restaurant-page-board-stat:hover {
+  border: 2px dotted #E76062;
+  padding: 5px 10px;
+}
+
+/* Review Tile */
+
+.restaurant-page-review-header {
+  width: auto;
+  padding: 15px;
+  border-radius: 25px 25px 0 0;
+  background-color: #135E8A;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Avenir';
+}
+
+.restaurant-page-review-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border-radius: 0px 0px 25px 25px;
+  background-color: #E5F7FB;
+}
+
+ul.restaurant-page-review-list {
+  display: block;
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.restaurant-page-review-list > li.restaurant-page-review-item {
+  margin: 5px;
+}

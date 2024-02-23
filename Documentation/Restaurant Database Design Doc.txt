@@ -1,0 +1,16 @@
+Restaurant Database Design Document
+Eureka Eats, CS 3337 Group 6
+Last Updated: 10/14/2023
+
+NOTE:
+Updated version of a mock restaurant database design from product proposal. This design is a representation of what the restaurant database should be for our website EurekaEats. Design will be updated to meet new changes.   MongoDB items in database:  Field id - Unique restaurant id. Type MongoDB ObjectID (a long, pseudo-randomly generated string). Field name - Restaurant name. Type String
+Field address - Restaurant address. Type Object (Subfields below) 	state - US state or protectorate name. Type 2 letter String
+	city - US city name. Type String 	street - Name of adjacent street. Type String 	building_num -  Number of the building by the street. Type int Field cuisine - Ethnicity of the dishes, e.g Chinese, Italian, etc. Type String  Field price - Average cost of the offered dishes for the restaurant. Type int  Field reviews - Reviews for the restaurant. Type Object
+	Field restaurant_id - restaurant id for access to the restaurant database. Type int
+	Field restaurant_name - the restaurant name. Type String
+	Field datetime - Time of the review. Type Date Object
+	Field star_rating - Star rating review of the restaurant. Type int
+	Field comment - User comments for the restaurant. Type String   
+Change log
+10/13/23 - Derek - Created initial document.
+10/14/23 - David - Updated formatting and changed "reviewers" field to "reviews". Updated reviews to contain a date-time field.
